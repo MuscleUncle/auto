@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeiChat.Api", "WeiChat.Api\WeiChat.Api.csproj", "{A1D59AB4-3EE4-4659-9921-D696B5909C54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeiChat.Models", "WeiChat.Models\WeiChat.Models.csproj", "{DE9792A4-8568-4D56-9AB4-03DC40396283}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeiChat.Service", "WeiChat.Service\WeiChat.Service.csproj", "{5C5E5C3A-7318-4A71-9310-F49CB76025F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeiChat.Dao", "WeiChat.Dao\WeiChat.Dao.csproj", "{D4693D50-E551-476E-80D1-282DB1692294}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1D59AB4-3EE4-4659-9921-D696B5909C54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1D59AB4-3EE4-4659-9921-D696B5909C54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1D59AB4-3EE4-4659-9921-D696B5909C54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1D59AB4-3EE4-4659-9921-D696B5909C54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE9792A4-8568-4D56-9AB4-03DC40396283}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE9792A4-8568-4D56-9AB4-03DC40396283}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE9792A4-8568-4D56-9AB4-03DC40396283}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE9792A4-8568-4D56-9AB4-03DC40396283}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C5E5C3A-7318-4A71-9310-F49CB76025F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C5E5C3A-7318-4A71-9310-F49CB76025F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C5E5C3A-7318-4A71-9310-F49CB76025F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C5E5C3A-7318-4A71-9310-F49CB76025F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4693D50-E551-476E-80D1-282DB1692294}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4693D50-E551-476E-80D1-282DB1692294}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4693D50-E551-476E-80D1-282DB1692294}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4693D50-E551-476E-80D1-282DB1692294}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
