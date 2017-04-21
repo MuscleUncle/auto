@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace WeiChat.Models.AppSettings
+﻿namespace WeiChat.Models.AppSettings
 {
     public class ConnectionStrings
     {

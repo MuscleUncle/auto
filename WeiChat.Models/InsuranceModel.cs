@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace WeiChat.Models
+﻿namespace WeiChat.Models
 {
     public class InsuranceModel
     {

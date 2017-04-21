@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using WeiChat.Dao;
+﻿using WeiChat.Dao;
 using WeiChat.Models;
 
 namespace WeiChat.Service

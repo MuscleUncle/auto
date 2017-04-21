@@ -2,9 +2,6 @@
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using WeiChat.Models;
 using WeiChat.Models.AppSettings;
 using WeiChat.Service;
