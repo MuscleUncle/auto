@@ -10,11 +10,10 @@ namespace WeiChat.Api.Controllers
 {
     public class UserController : Controller
     {
-        private ConnectionStrings config;
-        private UserService _userService;
+        private readonly UserService _userService;
         public UserController(IOptions<ConnectionStrings> option)
         {
-            config = option.Value;
+            var config = option.Value;
             _userService = new UserService(config.MySqlConnection);
         }
 

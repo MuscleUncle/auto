@@ -8,7 +8,7 @@ namespace WeiChat.Dao
 {
     public class MySqlDbHelper
     {
-        private string _connSrt;
+        private readonly string _connSrt;
         public MySqlDbHelper(string connSrt)
         {
             _connSrt = connSrt;

@@ -8,7 +8,7 @@ namespace WeiChat.Service
 {
     public class AutoService
     {
-        private AutoDao _autoDao;
+        private readonly AutoDao _autoDao;
         public AutoService(string connection)
         {
             _autoDao = new AutoDao(connection);
@@ -76,7 +76,7 @@ namespace WeiChat.Service
         /// </returns>
         public int SaveCarInfo(CarInfoModel model)
         {
-            var exist = _autoDao.CarPlateNumExistByUserId(model.PlateNum, (int)model.UserId);
+            var exist = model.UserId != null && _autoDao.CarPlateNumExistByUserId(model.PlateNum, (int)model.UserId);
             if (exist)
             {
                 return 1;

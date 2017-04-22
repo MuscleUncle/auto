@@ -5,7 +5,7 @@ namespace WeiChat.Dao
 {
     public class UserInfoDao
     {
-        private string _connection;
+        private readonly string _connection;
         public UserInfoDao(string connection)
         {
             _connection = connection;

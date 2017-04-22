@@ -5,10 +5,10 @@ namespace WeiChat.Service
 {
     public class UserService
     {
-        private UserInfoDao userInfoDao;
+        private readonly UserInfoDao _userInfoDao;
         public UserService(string connection)
         {
-            userInfoDao = new UserInfoDao(connection);
+            _userInfoDao = new UserInfoDao(connection);
         }
 
         /// <summary>
@@ -22,12 +22,12 @@ namespace WeiChat.Service
         /// </returns>
         public int Register(UserInfo user)
         {
-            bool existsResult = userInfoDao.LoginExists(user.LoginName);
+            bool existsResult = _userInfoDao.LoginExists(user.LoginName);
             if (existsResult)
             {
                 return 1;
             }
-            int count = userInfoDao.InsertUser(user);
+            int count = _userInfoDao.InsertUser(user);
 
             if (count > 0)
             {
@@ -47,7 +47,7 @@ namespace WeiChat.Service
         /// </returns>
         public int Login(string lgName, string lgPwd)
         {
-            bool existsResult = userInfoDao.LoginWithPwdExists(lgName, lgPwd);
+            bool existsResult = _userInfoDao.LoginWithPwdExists(lgName, lgPwd);
             if (existsResult)
             {
                 return 1;
@@ -65,7 +65,7 @@ namespace WeiChat.Service
         /// </returns>
         public int LoginByOpen(string openId)
         {
-            bool existsResult = userInfoDao.LoginWithOpenId(openId);
+            bool existsResult = _userInfoDao.LoginWithOpenId(openId);
 
             if (existsResult)
             {

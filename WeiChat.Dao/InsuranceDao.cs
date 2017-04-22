@@ -6,7 +6,7 @@ namespace WeiChat.Dao
 {
     public class InsuranceDao
     {
-        private string _connection;
+        private readonly string _connection;
         public InsuranceDao(string connection)
         {
             _connection = connection;

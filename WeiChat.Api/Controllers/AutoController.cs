@@ -10,11 +10,10 @@ namespace WeiChat.Api.Controllers
 {
     public class AutoController : Controller
     {
-        private ConnectionStrings config;
-        private AutoService _autoService;
+        private readonly AutoService _autoService;
         public AutoController(IOptions<ConnectionStrings> option)
         {
-            config = option.Value;
+            var config = option.Value;
             _autoService = new AutoService(config.MySqlConnection);
         }
 

@@ -5,7 +5,7 @@ namespace WeiChat.Dao
 {
     public class AutoDao
     {
-        private string _connection;
+        private readonly string _connection;
         public AutoDao(string connection)
         {
             _connection = connection;
